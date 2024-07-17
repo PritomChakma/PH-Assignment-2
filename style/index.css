@@ -130,6 +130,7 @@ h3 {
   padding: 3rem;
   margin: 0 auto;
   border-radius: 18px;
+  margin-bottom: 0px;
 }
 .run-section-img img {
   width: 100%;
@@ -138,4 +139,59 @@ h3 {
 .run-section-title h3,
 p {
   text-align: start;
+}
+
+/* calculation section start */
+.calculation-section {
+  background-color: rgb(0, 0, 0);
+  margin: 0 aut0;
+  padding: 5rem;
+}
+.calculation-section p {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+/* meet the team section start */
+.meet-team-section {
+  background-color: rgb(0, 0, 0);
+  /* margin: 0 auto; */
+  padding: 5rem;
+}
+.meet-team-section p {
+  text-align: center;
+}
+.team-section-college {
+  background-color: rgb(34, 34, 34);
+  margin: 0 3rem;
+  border-radius: 18px;
+  height: 600px;
+}
+.row-1 img,
+.row-2 img {
+  width: 100%;
+  height: 250px;
+  border-radius: 18px;
+  margin-top: 2rem;
+  margin-left: 0.8rem;
+  margin: 0 auto;
+}
+.row-1,
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 auto;
+}
+.name {
+  position: absolute;
+  font-size: 1.75rem;
+  font-weight: 900px;
+  color: rgb(255, 255, 255);
+  transform: translate(15%, -200%);
+}
+.teach {
+  font-size: 1rem;
+  font-weight: 400;
 }
