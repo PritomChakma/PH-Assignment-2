@@ -23,6 +23,16 @@ h3 {
   border: none;
   color: white;
 }
+
+.btn-app {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+  width: 200px;
+  height: 48px;
+  border: none;
+  color: white;
+}
 .container {
   width: 100%;
 }
@@ -79,18 +89,62 @@ h3 {
   );
 }
 .nav-section-title {
-  margin: 0 auto;
   border: 2px solid red;
+  text-align: left;
 }
+
 .nav-section-img {
   border: 2px solid green;
-  margin: 0 auto;
 }
+.nav-section-img img {
+  text-align: left;
+  margin-left: 110px;
+}
+
 .nav-section-title h1 {
   font-size: 4.8rem;
   font-weight: 900;
   color: white;
 }
+.nav-section-title p {
+  text-align: start;
+}
+.nav-box1 {
+  border-radius: 10px;
+  padding: 12px;
+  width: 150px;
+  border: none;
+  margin-left: 300px;
+  margin-top: 150px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+.nav-box2 {
+  border-radius: 10px;
+  padding: 12px;
+  width: 150px;
+  border: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  border: 2px rgb(230, 83, 60);
+  margin-top: 400px;
+  margin-left: 100px;
+  z-index: 2;
+}
+#nav-section-bg {
+  border: rgb(230, 83, 60);
+  border-radius: 50%;
+}
+
 #shape {
   font-family: 'Dancing Script';
 }
@@ -170,7 +224,7 @@ p {
 .calculation-section {
   background-color: rgb(0, 0, 0);
   margin: 0 aut0;
-  padding: 1rem;
+  padding: 5rem;
 }
 .calculation-section p {
   text-align: center;
@@ -183,6 +237,7 @@ p {
   background-color: rgb(34, 34, 34);
   padding: 5rem;
   margin: 0 auto;
+  border-radius: 18px;
 }
 .calculation-chart h5 {
   font-size: 1.75rem;
@@ -235,7 +290,7 @@ p {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  width: 100%;
+  width: 70%;
 }
 .calculation-bmi button {
   margin-top: 1rem;
@@ -286,7 +341,7 @@ p {
 
 /* footer section start */
 footer {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(34, 34, 34);
   padding: 5rem;
 }
 .footer-fitness h2 {
@@ -338,16 +393,38 @@ hr {
 /* meedia quarey for mobile */
 
 @media screen and (max-width: 576px) {
+  .btn-primary {
+    background-color: rgb(230, 83, 60);
+    padding: 5px auto;
+    border-radius: 20px;
+    width: 180px;
+    height: 48px;
+    border: none;
+    color: white;
+  }
+  .btn-app {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    width: 180px;
+    height: 48px;
+    border: none;
+    color: white;
+  }
+  #select-option {
+    width: 100%;
+  }
   .header-title {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
+    padding: 2rem;
   }
   .team-section-college,
   .calculation-chart {
     background-attachment: fixed;
-    width: 100%;
+    /* width: 100%; */
   }
   .row-1,
   .row-2 {
@@ -356,8 +433,7 @@ hr {
   }
   .row-1 img,
   .row-2 img {
-    height: 200px;
-    width: 240px;
+    height: 180px;
     margin-left: 0px;
   }
   .nav-section {
@@ -365,32 +441,49 @@ hr {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .nav-section-title {
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    margin-left: 2rem;
+  .home-bar {
+    display: none;
+  }
+  .fit {
+    text-align: left;
+  }
+  .nav-section-title,
+  .nav-section-title p {
+    text-align: left;
   }
   .nav-section-title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .nav-section-title p,
   .run-section-title p {
     font-size: 1rem;
   }
-  .nav-section-title button {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-  }
+
   .nav-section-img img {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+  .nav-box1 {
+    margin-left: 200px;
+    margin-top: 150px;
+    width: 140px;
+    padding: 7px;
+  }
+  .nav-box2 {
+    width: 130px;
+    padding: 7px;
+    margin: 0 auto;
+    margin-top: 400px;
+    position: absolute;
+    z-index: 1;
   }
   .habit-section h3,
   .run-section-title h3,
-  .calculation-section h3 {
+  .calculation-section h3,
+  .meet-team-section h3 {
     font-size: 2rem;
     margin-top: 0;
   }
@@ -426,6 +519,9 @@ hr {
     align-items: center;
     text-align: center;
   }
+  .calculation-section {
+    padding: 0;
+  }
   .calculation-bmi input,
   .calculation-bmi select {
     width: 300px;
@@ -435,13 +531,17 @@ hr {
     padding: 15px;
     border-radius: 18px;
   }
+  footer {
+    background-color: rgb(34, 34, 34);
+    padding: 2rem;
+  }
 
   .footer-section {
     display: grid;
     grid-template-columns: 1fr;
   }
   .footer-platform {
-    gap: 1rem;
+    gap: 5px;
     display: flex;
     flex-direction: column;
   }
