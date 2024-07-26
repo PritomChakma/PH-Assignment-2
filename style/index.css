@@ -3,10 +3,11 @@
 body {
   font-family: 'Inter', sans-serif;
 }
-.fa-solid {
+.fa-bars {
   display: none;
   color: white;
 }
+
 p {
   font-size: 1rem;
   font-family: 400;
@@ -51,8 +52,8 @@ h3 {
 .nav-bar {
   background: linear-gradient(
     180deg,
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
+    rgb(17, 17, 17) 80%,
+    rgba(119, 119, 119, 0) 20%
   );
 }
 .header-title {
@@ -92,21 +93,16 @@ h3 {
   grid-template-columns: 1fr 1fr;
   background: linear-gradient(
     360deg,
-    rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
+    rgb(17, 17, 17) 100%,
+    rgba(119, 119, 119, 0)
   );
 }
 .nav-section-title {
   margin-left: 100px;
-  padding: 1rem;
 }
 
-.nav-section-img {
-  /* border: 2px solid green; */
-}
 .nav-section-img img {
-  /* text-align: left; */
-  margin-left: 250px;
+  margin-left: 200px;
   margin-top: 30px;
 }
 
@@ -124,37 +120,43 @@ h3 {
 .nav-section-title p {
   text-align: start;
 }
+
 .nav-box1 {
-  border-radius: 10px;
-  padding: 12px;
   width: 150px;
-  border: none;
-  margin-left: 450px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  margin-left: 400px;
   margin-top: 160px;
   position: absolute;
-  background: rgba(255, 255, 255, 0.1);
-  font-size: 14px;
-  font-weight: bolder;
-  text-align: center;
-  color: white;
-  z-index: 1;
 }
 .nav-box2 {
-  border-radius: 10px;
-  padding: 12px;
   width: 150px;
-  border: none;
-  position: absolute;
+  height: 80px;
   background: rgba(255, 255, 255, 0.1);
-  font-size: 14px;
-  font-weight: bolder;
-  text-align: center;
+  border: 1px rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   margin-top: 450px;
   margin-left: 180px;
   color: white;
-  z-index: 2;
+  position: absolute;
 }
-#nav-section-bg {
+.fa-play {
+  background: rgb(230, 83, 60);
+  margin-left: 20px;
+  border: 8px solid rgb(230, 83, 60);
+  border-radius: 100%;
+}
+
+.nav-box-h {
+  font-size: 24px;
+  font-weight: 900;
+}
+.nav-box-p {
+  font-size: 13px;
+  font-weight: 400;
 }
 
 #shape {
@@ -236,11 +238,6 @@ p {
 .bmi,
 .meet {
   padding: 5rem;
-}
-
-.calculation-bmi {
-  padding: 2rem;
-  width: 577px;
 }
 .calculation-section {
   background-color: rgb(0, 0, 0);
@@ -420,7 +417,7 @@ hr {
 
 @media screen and (max-width: 576px) {
   /* for univeersal button */
-  .fa-solid {
+  .fa-bars {
     display: inline;
     color: white;
   }
@@ -461,6 +458,7 @@ hr {
   }
   .nav-section-title {
     margin: 0;
+    padding: 1rem;
   }
   .nav-section-title,
   .nav-section-title p {
@@ -482,16 +480,18 @@ hr {
     position: relative;
   }
   .nav-box1 {
-    margin-left: 200px;
-    margin-top: 150px;
+    margin-left: 30px;
+    margin-top: 95px;
     width: 140px;
     padding: 7px;
+    z-index: 1;
   }
   .nav-box2 {
-    width: 130px;
+    width: 140px;
     padding: 7px;
     margin: 0 auto;
-    margin-top: 400px;
+    margin-top: 300px;
+    margin-left: -170px;
     position: absolute;
     z-index: 1;
   }
@@ -507,7 +507,7 @@ hr {
   }
   .row-1 img,
   .row-2 img {
-    height: 180px;
+    height: 250px;
     margin-left: 0px;
   }
 
@@ -569,10 +569,7 @@ hr {
     padding: 0;
   }
   .calculation-bmi {
-    width: 360px;
-  }
-  .calculation-bmi button {
-    margin-right: 200px;
+    padding: 2rem;
   }
   /* Meet the team section */
 
