@@ -281,39 +281,40 @@ p {
   font-size: 1.75rem;
   font-weight: 900;
   color: rgb(255, 255, 255);
-  /* text-align: center; */
 }
 .calculation-bmi p {
   text-align: start;
-  font-size: 0.9rem;
-  font-weight: 400;
 }
-.calculation-bmi input,
-.calculation-bmi select {
-  background-color: transparent;
-  color: white;
-  margin-top: 1rem;
-  border-radius: 5px;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-}
-#select-option {
-  background-color: transparent;
-  color: white;
-  margin-top: 1rem;
-  border-radius: 5px;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  width: 70%;
-}
+
 .calculation-bmi button {
   margin-top: 1rem;
 }
-/* background: rgba(255, 255, 255, 0.1);
+
+.input-name input,
+.age-option input,
+.age-option select {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
   border: none;
 }
+.input-name,
+.age-option {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+.select-option {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+}
+
 /* meet the team section start */
 .meet-team-section {
   background-color: rgb(0, 0, 0);
@@ -360,6 +361,9 @@ footer {
   background-color: rgb(34, 34, 34);
   padding: 5rem;
 }
+.footer-fitness {
+  width: 500px;
+}
 .footer-fitness h2 {
   font-size: 4.3rem;
   font-weight: 800;
@@ -369,6 +373,7 @@ footer {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
+  text-align: start;
 }
 .footer-section {
   display: flex;
@@ -409,6 +414,7 @@ hr {
 /* meedia quarey for mobile */
 
 @media screen and (max-width: 576px) {
+  /* for univeersal button */
   .fa-solid {
     display: inline;
     color: white;
@@ -431,29 +437,8 @@ hr {
     border: none;
     color: white;
   }
-  #select-option {
-    width: 100%;
-  }
-  .header-title {
-    text-align: center;
-    padding: 1rem;
-  }
-  .team-section-college {
-  }
-  .calculation-chart {
-    background-attachment: fixed;
-    /* width: 100%; */
-  }
-  .row-1,
-  .row-2 {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .row-1 img,
-  .row-2 img {
-    height: 180px;
-    margin-left: 0px;
-  }
+
+  /* nav section start */
   .nav-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -505,6 +490,23 @@ hr {
     position: absolute;
     z-index: 1;
   }
+  .header-title {
+    text-align: center;
+    padding: 1rem;
+  }
+  /* team section start */
+  .row-1,
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .row-1 img,
+  .row-2 img {
+    height: 180px;
+    margin-left: 0px;
+  }
+
+  /* habite section start */
   .habit-section h3,
   .run-section-title h3,
   .calculation-section h3,
@@ -524,6 +526,8 @@ hr {
     text-align: center;
   }
 
+  /* Run an Extra Mile Easily section start */
+
   .run-section {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -536,6 +540,11 @@ hr {
     text-align: center;
   }
 
+  /* calculation section start */
+
+  .calculation-chart {
+    background-attachment: fixed;
+  }
   .calculation {
     display: grid;
     grid-template-columns: 1fr;
@@ -550,16 +559,13 @@ hr {
   .bmi {
     padding: 3rem;
   }
-  /* .bmi-calculation p {
-    text-align: center;
-  } */
+
   .calculation-section {
     padding: 0;
   }
-  .calculation-bmi input,
-  .calculation-bmi select {
-    width: 300px;
-  }
+
+  /* Meet the team section */
+
   .meet {
     padding: 0;
   }
@@ -571,9 +577,15 @@ hr {
     background-color: rgb(34, 34, 34);
     border-radius: 18px;
   }
+
+  /* footer section start */
+
   footer {
     background-color: rgb(34, 34, 34);
     padding: 2rem;
+  }
+  .footer-fitness {
+    width: 100%;
   }
   .footer-fitness h2 {
     font-size: 2.5rem;
