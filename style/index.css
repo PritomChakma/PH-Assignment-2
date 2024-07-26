@@ -237,6 +237,11 @@ p {
 .meet {
   padding: 5rem;
 }
+
+.calculation-bmi {
+  padding: 2rem;
+  width: 577px;
+}
 .calculation-section {
   background-color: rgb(0, 0, 0);
   margin: 0 aut0;
@@ -563,7 +568,12 @@ hr {
   .calculation-section {
     padding: 0;
   }
-
+  .calculation-bmi {
+    width: 360px;
+  }
+  .calculation-bmi button {
+    margin-right: 200px;
+  }
   /* Meet the team section */
 
   .meet {
